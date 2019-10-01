@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Shelby codes`,
+    description: `Welcome to my personal website.`,
+    author: `Shelby Stanton`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +25,18 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: false, // Enable while using `gatsby develop`
+        tailwind: true, // Enable tailwindcss support
+        //whitelist: [/^c-/], // Don't remove this selector
+        ignore: ["/styles/reset.css", "/styles/custom.css"], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
