@@ -3,7 +3,7 @@ import React from "react"
 const content = () => (
   <>
     <div className="container mx-auto">
-      <div className="lg:w-1/2 mr-auto text-xl opacity-50">
+      <div className="lg:w-1/2 mr-auto text-xl opacity-50 px-2">
         <p className="mb-4">
           I’m a front end focused developer currently concentrating on going
           full stack. You can see my rants about this journey through my
